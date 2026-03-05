@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<h1>Viewer — {{project.name}}</h1><form method="get"><input name="q" value="{{q}}" placeholder="Search"><button>Search</button></form><ul>{% for l in lines %}<li><strong>{{l.citation}}</strong> {{l.text}}</li>{% endfor %}</ul>{% endblock %}
